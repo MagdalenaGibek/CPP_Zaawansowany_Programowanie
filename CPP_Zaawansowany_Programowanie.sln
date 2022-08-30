@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zad_01", "Zad_01\Zad_01.vcxproj", "{15F4A553-6818-4EB7-8C78-D5BB926D493F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zad_02", "Zad_02\Zad_02.vcxproj", "{874177AC-8C53-404A-8B2D-81777F52C05C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{15F4A553-6818-4EB7-8C78-D5BB926D493F}.Release|x64.Build.0 = Release|x64
 		{15F4A553-6818-4EB7-8C78-D5BB926D493F}.Release|x86.ActiveCfg = Release|Win32
 		{15F4A553-6818-4EB7-8C78-D5BB926D493F}.Release|x86.Build.0 = Release|Win32
+		{874177AC-8C53-404A-8B2D-81777F52C05C}.Debug|x64.ActiveCfg = Debug|x64
+		{874177AC-8C53-404A-8B2D-81777F52C05C}.Debug|x64.Build.0 = Debug|x64
+		{874177AC-8C53-404A-8B2D-81777F52C05C}.Debug|x86.ActiveCfg = Debug|Win32
+		{874177AC-8C53-404A-8B2D-81777F52C05C}.Debug|x86.Build.0 = Debug|Win32
+		{874177AC-8C53-404A-8B2D-81777F52C05C}.Release|x64.ActiveCfg = Release|x64
+		{874177AC-8C53-404A-8B2D-81777F52C05C}.Release|x64.Build.0 = Release|x64
+		{874177AC-8C53-404A-8B2D-81777F52C05C}.Release|x86.ActiveCfg = Release|Win32
+		{874177AC-8C53-404A-8B2D-81777F52C05C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
