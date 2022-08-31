@@ -2,6 +2,13 @@
 #include <map>
 #include <string>
 
+MorseCodeTranslator::MorseCodeTranslator()
+{
+}
+
+MorseCodeTranslator::~MorseCodeTranslator()
+{
+}
 std::string MorseCodeTranslator::toMorseCode(std::string text)
 {
     std::string translated;
