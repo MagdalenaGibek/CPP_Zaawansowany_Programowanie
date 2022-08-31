@@ -48,7 +48,6 @@ int numOfLetters(std::string str1, std::string str2)
     }
 
     return counter;
-
 }
 
 int main()
