@@ -9,6 +9,8 @@
 class MorseCodeTranslator
 {
 public:
+	MorseCodeTranslator();
+	virtual ~MorseCodeTranslator();
 	std::string toMorseCode(std::string text);
 	std::string fromMorseCode(std::string text);
 private:
