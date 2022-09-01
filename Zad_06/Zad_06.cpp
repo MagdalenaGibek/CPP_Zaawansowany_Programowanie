@@ -1,20 +1,54 @@
-// Zad_06.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// Stwórz listę liczb od 1 do 1000. 
+// Rozdziel te liczby na dwie osobne listy: liczby pierwsze i nie liczby pierwsze. 
 
 #include <iostream>
+#include <vector>
+#include <numeric>
+#include <algorithm>
+
+bool ifPrimeNum(int n)
+{
+    if (n < 2)
+    {
+        return false;
+    }
+        
+    for (int i = 2; i * i <= n; ++i)
+    {
+        if (n%i == 0)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::vector<int>list(1000);
+    std::vector<int>primeNum;
+    std::vector<int>notPrimeNum;
+    std::iota(list.begin(), list.end(), 1);
+    std::cout << "Stworzony wektor: " << std::endl << std::endl;
+    std::for_each(list.begin(), list.end(), [](const int i) {std::cout << i << "; "; });
+    std::cout << std::endl << std::endl;
+    std::for_each(list.begin(), list.end(), [&primeNum, &notPrimeNum](const int i) {
+        if (ifPrimeNum(i))
+        {
+            primeNum.push_back(i);
+        }
+        else
+        {
+            notPrimeNum.push_back(i);
+        }});
+
+    std::cout << "Liczby pierwsze z zakresu 1-1000: " << std::endl << std::endl;
+    std::for_each(primeNum.begin(), primeNum.end(), [](const int i) {std::cout << i << "; "; });
+    std::cout<<std::endl << std::endl;
+    std::cout << "Pozostałe liczby z zakresu 1-1000: " << std::endl << std::endl;
+    std::for_each(notPrimeNum.begin(), notPrimeNum.end(), [](const int i) {std::cout << i << "; "; });
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
