@@ -21,7 +21,7 @@ int main()
     rects.printRectangles();
     int rectanglesBiggerThan = 50;
     std::cout<<"Liczba prostokątów, którzych pole jest większe niż " << rectanglesBiggerThan <<" : " << rects.countRectangleBiggerThen(rectanglesBiggerThan) << std::endl;
-    std::cout << "Lista kwadratów zawartych w zbiorze prostokątów: " << rects.copyRectangles()<<std::endl;
+    std::cout << "Lista kwadratów zawartych w zbiorze prostokątów: " << std::endl << rects.copyRectangles() << std::endl;
     
     //auto squares = rects.copyRectangles();
     //std::for_each(squares.begin(), squares.end(), printElement);
